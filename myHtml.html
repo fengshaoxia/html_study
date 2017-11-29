@@ -2,6 +2,10 @@
 <htmle>
 	<head>
 		<title dir = "rtl">Hello HTML</title>
+		<style type = "text/css">
+		h1 {color:red}
+		h2 {color:green}
+		</style>
 	</head>
 
 	<body background = "bg.jpg">
@@ -20,6 +24,8 @@
 			<br />
 			花落知多少。		
 		</p>
+		<hr />
+		<a href = "#label_address">联系作者</a>
 		<hr />
 		<h2 style = "text-align:left">文本格式化练习</h2>
 		<p style="text-align:center;font-size:20px;color:green">
@@ -46,40 +52,43 @@
 		<hr />
 		<h2 style = "text-align:left">“计算机输出”标签</h2>
 		<p style="text-align:center;font-family:times;color:#FF00FF;size:20px">
-			<code>定义计算机代码。</code>
+			<code>var person = { firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue" }</code>
 			<br />
-			<kbd>定义键盘码。</kbd>
+			To open a file,select:
+			<kbd>File|Open...</kbd>
 			<br />
-			<samp>定义计算机代码样本。</samp>
+			<samp>
+				demo.example.com login: Apr 12 09:10:17
+				Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+			</samp>
 			<br />
 			<tt>定义打字机代码。</tt>
 			<br />
-			<var>定义变量。</var>
+			<var>E = mc<sup>2</sup></var>
 			<br />
-			<pre style = "font-size:20px;background-color:white">
-&lt;html&gt;
-&lt;head&gt;
-  &lt;script type=&quot;text/javascript&quot; src=&quot;loadxmldoc.js&quot;&gt;
-&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-
-  &lt;script type=&quot;text/javascript&quot;&gt;
-    <a href="https://www.baidu.com">BaiDu</a>
-  &lt;/script&gt;
-
-&lt;/body&gt;
-
-&lt;/html&gt;
+			<code>
+			<pre style="text-align:center;color:#FF00FF">
+var person = {
+    		firstName:"Bill",
+    		lastName:"Gates",
+   		age:50,
+    		eyeColor:"blue"
+	}
 			</pre>
+			</code>
 		</p>
 		<hr />
 		<h2 style="text-align:left">缩写和首字母缩写</h2>
 		<p style="font-size:20px;family:times;color:pink;text-align:left">
-			<abbr title="World Wide Web">WWW<abbr>
+			互联网缩写：<abbr title="World Wide Web">WWW<abbr>
 			<br />
 			等等的英文单词为：<acronym title="etcetera">etc.</acronym>。
+			<br />
+			<dfn title="World Health Organization">WHO</dfn>成立于1948年。
+			<br />
+			<dfn><abbr title="World Health Organization">WHO<abbr></dfn>成立于1948年。
+			<br />
+			The <dfn>WHO</dfn> World Health Organization 成立于 1948 年。
 		</p>
 		<hr />
 		<h2>引用</h2>
@@ -96,13 +105,15 @@
 			<bdo dir="ltr">从右往左读</bdo>
 		</p>
 		<hr />
-		<h2 style="text-align:left">地址标签</h2>
+		<h2 style="text-align:left"><a name = "label_address">地址标签</a></h2>
 		<p style="font-size:20px;text-align:left">
 			<adress>
 				Written by <a href="mailto:fengshaoxia@126.com">ZhangBiao</a>.
 				<br />
 				<i>Visit us at：GuangXi LiuZhou.cn</i>
 			</adress>
+			<br />
+			<cite>The Scream</cite> by Edward Munch. Painted in 1893.
 		</p>
 	</body>
 </html>
