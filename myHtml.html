@@ -105,6 +105,41 @@ var person = {
 			<bdo dir="ltr">从右往左读</bdo>
 		</p>
 		<hr />
+
+		<h2>插入图片</h2>
+		<p>
+			图片在左侧<img src = "imge/eg_cute.gif" align = "left" />
+			<br />
+			图片在右侧<img src="imge/eg_cute.gif" align="right" />
+			<br />
+			图片<img src="imge/eg_cute.gif" align = "top" alt = "小白兔"/>在文本中上对齐
+			<br />
+			图片<img src = "imge/eg_cute.gif" align = "middle" alt = "小白兔"/>在文本中中对齐
+			<br />
+			图片<img src = "imge/eg_cute.gif" align = "bottom" alt = "小白兔" />在文本中下对齐
+			<br />
+			<img src = "imge/eg_mouse.jpg" width="50" height="50"/>
+			<br />
+			<img src = "imge/eg_mouse.jpg" width="100" height="100"/ alt = "鼠标100*100">
+			<br />
+			<img src = "imge/eg_mouse.jpg" width="150" height="150"/>
+			<br />
+			点击<a href="https://www.baidu.com/" target = "_blank"><img src="imge/baidu.png" border = "0" width = "100" height = "50" /></a>转到百度首页
+		</p>
+		<hr />
+		
+		<h2>图像映射</h2>
+		<p>
+			<map name = "planetmap" id = "planetmap">
+				<area shape = "circle" coords="180,139,14" href="venus.html" target="_blank" atl="Venus" />
+				<area shape = "circle" coords="129,161,10" href="mercury.html" target="_blank" alt = "Mercury" />
+				<area shape = "rect" coords="0,0,110,260" href="sun.html" target="_blank" alt="Sun" />
+			</map>
+			<img src= "imge/eg_planets.jpg" border="0" usemap = "#planetmap" />
+		</p>
+
+		<hr />
+
 		<h2 style="text-align:left"><a name = "label_address">地址标签</a></h2>
 		<p style="font-size:20px;text-align:left">
 			<adress>
