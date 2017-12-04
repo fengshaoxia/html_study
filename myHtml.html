@@ -2,17 +2,153 @@
 <htmle>
 	<head>
 		<title dir = "rtl">Hello HTML</title>
+		<style type = "text/css">
+		h1 {color:red}
+		h2 {color:green}
+		</style>
 	</head>
 
-	<body bgcolor = "yellow" background = "bg.jpg">
+	<body background = "bg.jpg">
 		<!--这是标题-->
-		<h1 align = "center">随便的一个标题</h1>
-
+		<h1 style = "text-align:center">自测练习</h1>
+		<br />
+		<h2 style="text-align:left">一首诗</h2>
 		<!--这是段落内容-->
-		<p>第一段写什么呢？</p>
+		<h3 style = "text-align:center;color:red">春晓</h3>
+		<p style="text-align:center;color:red;font-size:20px">
+			春眠不觉晓，
+			<br />
+			处处闻啼鸟。
+			<br />
+			夜来风雨声，
+			<br />
+			花落知多少。		
+		</p>
 		<hr />
-		<p>第二段写什么呢？</p>
+		<a href = "#label_address">联系作者</a>
 		<hr />
-		<p>故事产生的背景</p>
+		<h2 style = "text-align:left">文本格式化练习</h2>
+		<p style="text-align:center;font-size:20px;color:green">
+			<b>定义粗体文本。</b>
+			<br />
+			<big>定义大号字体。</big>
+			<br />
+			<em>定义着重文字。</em>
+			<br />
+			<i>定义斜字体。</i>
+			<br />
+			<small>定义小号字。</small>
+			<br />
+			<strong>定义加重语气。</strong>
+			<br />
+			定义<sub>下标字</sub>。
+			<br />
+			定义<sup>上标字</sup>。
+			<br />
+			定义<ins>插入字</ins>。
+			<br />
+			<del>定义删除字</del>。
+		</p>
+		<hr />
+		<h2 style = "text-align:left">“计算机输出”标签</h2>
+		<p style="text-align:center;font-family:times;color:#FF00FF;size:20px">
+			<code>var person = { firstName:"Bill", lastName:"Gates", age:50, eyeColor:"blue" }</code>
+			<br />
+			To open a file,select:
+			<kbd>File|Open...</kbd>
+			<br />
+			<samp>
+				demo.example.com login: Apr 12 09:10:17
+				Linux 2.6.10-grsec+gg3+e+fhs6b+nfs+gr0501+++p3+c4a+gr2b-reslog-v6.189
+			</samp>
+			<br />
+			<tt>定义打字机代码。</tt>
+			<br />
+			<var>E = mc<sup>2</sup></var>
+			<br />
+			<code>
+			<pre style="text-align:center;color:#FF00FF">
+var person = {
+    		firstName:"Bill",
+    		lastName:"Gates",
+   		age:50,
+    		eyeColor:"blue"
+	}
+			</pre>
+			</code>
+		</p>
+		<hr />
+		<h2 style="text-align:left">缩写和首字母缩写</h2>
+		<p style="font-size:20px;family:times;color:pink;text-align:left">
+			互联网缩写：<abbr title="World Wide Web">WWW<abbr>
+			<br />
+			等等的英文单词为：<acronym title="etcetera">etc.</acronym>。
+			<br />
+			<dfn title="World Health Organization">WHO</dfn>成立于1948年。
+			<br />
+			<dfn><abbr title="World Health Organization">WHO<abbr></dfn>成立于1948年。
+			<br />
+			The <dfn>WHO</dfn> World Health Organization 成立于 1948 年。
+		</p>
+		<hr />
+		<h2>引用</h2>
+		<p style="font-size:20px">
+			短引用举例：<q>鲁迅曾经说过：“别特么什么话都往我身上扣，这句话我没说过！”</q>
+			<br />
+			长引用举例：<blockquote>鲁迅（1881年9月25日－1936年10月19日），原名周樟寿，后改名周树人，字豫山，后改豫才，“鲁迅”是他1918年发表《狂人日记》时所用的笔名，也是他影响最为广泛的笔名，浙江绍兴人。著名文学家、思想家，五四新文化运动的重要参与者，中国现代文学的奠基人。</blockquote>
+		</p>
+		<hr />
+		<h2 style="text-align:left">文字方向</h2>
+		<p style="font-size:20px;color:green">
+			<bdo dir="rtl">从左往右读</bdo>
+			<br />
+			<bdo dir="ltr">从右往左读</bdo>
+		</p>
+		<hr />
+
+		<h2>插入图片</h2>
+		<p>
+			图片在左侧<img src = "imge/eg_cute.gif" align = "left" />
+			<br />
+			图片在右侧<img src="imge/eg_cute.gif" align="right" />
+			<br />
+			图片<img src="imge/eg_cute.gif" align = "top" alt = "小白兔"/>在文本中上对齐
+			<br />
+			图片<img src = "imge/eg_cute.gif" align = "middle" alt = "小白兔"/>在文本中中对齐
+			<br />
+			图片<img src = "imge/eg_cute.gif" align = "bottom" alt = "小白兔" />在文本中下对齐
+			<br />
+			<img src = "imge/eg_mouse.jpg" width="50" height="50"/>
+			<br />
+			<img src = "imge/eg_mouse.jpg" width="100" height="100"/ alt = "鼠标100*100">
+			<br />
+			<img src = "imge/eg_mouse.jpg" width="150" height="150"/>
+			<br />
+			点击<a href="https://www.baidu.com/" target = "_blank"><img src="imge/baidu.png" border = "0" width = "100" height = "50" /></a>转到百度首页
+		</p>
+		<hr />
+		
+		<h2>图像映射</h2>
+		<p>
+			<map name = "planetmap" id = "planetmap">
+				<area shape = "circle" coords="180,139,14" href="venus.html" target="_blank" atl="Venus" />
+				<area shape = "circle" coords="129,161,10" href="mercury.html" target="_blank" alt = "Mercury" />
+				<area shape = "rect" coords="0,0,110,260" href="sun.html" target="_blank" alt="Sun" />
+			</map>
+			<img src= "imge/eg_planets.jpg" border="0" usemap = "#planetmap" />
+		</p>
+
+		<hr />
+
+		<h2 style="text-align:left"><a name = "label_address">地址标签</a></h2>
+		<p style="font-size:20px;text-align:left">
+			<adress>
+				Written by <a href="mailto:fengshaoxia@126.com">ZhangBiao</a>.
+				<br />
+				<i>Visit us at：GuangXi LiuZhou.cn</i>
+			</adress>
+			<br />
+			<cite>The Scream</cite> by Edward Munch. Painted in 1893.
+		</p>
 	</body>
 </html>

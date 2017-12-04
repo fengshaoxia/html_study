@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Table</title>
+		<style type = "text/css">h3 {color:red}</style>
+	</head>
+	<body background = "imge/bg_tb.jpg">
+		<h3>没有边框的表格</h3>
+		<table border="0">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>			
+			</tr>
+			<tr>
+				<td>Row 2, Cell 1</td>
+				<td>Row 2, Cell 2</td>
+			</tr>
+			<tr>
+				<td>Row 3, Cell 1</td>
+				<td>Row 3, Cell 2</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h3>带有边框的表格</h3>
+		<table border = "1">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>			
+			</tr>
+			<tr>
+				<td>Row 2, Cell 1</td>
+				<td>Row 2, Cell 2</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Row 3, Cell 2</td>
+			</tr>
+		</table>	
+		<br />
+		<strong>比较一下</strong>
+		<table border = "1">
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>			
+			</tr>
+			<tr>
+				<td>Row 2, Cell 1</td>
+				<td>Row 2, Cell 2</td>
+			</tr>
+			<tr>
+				<td>&nbsp;</td>
+				<td>Row 3, Cell 2</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h3>空表格</h3>
+		<table border = "2">
+			<tr><th>Empty Table</th></tr>
+			<tr><td></td></tr>
+		</table>
+		<hr />
+		
+		<h3>表头</h3>
+		<p><b>水平的表头：</b></p>
+		<table border="3">
+			<tr>
+				<th>Name</th>
+				<th>Sex</th>
+				<th>Age</th>
+			</tr>	
+			<tr>
+				<td>Zhang San</td>
+				<td>Boy</td>
+				<td>8</td>
+			</tr>
+		</table>
+		<p><b>垂直的表头：</b></p>	
+		<table border="1">
+			<tr>
+				<th>Name</th>
+				<td>Zhang San</td>
+			</tr>
+			<tr>
+				<th>Sex</th>
+				<td>Boy</td>
+			</tr>
+			<tr>
+				<th>Age</th>
+				<td>8</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h3>带有标题的表格</h3>
+		<table border = "4">
+			<caption>我的标题</caption>
+			<tr><td>100</td><td>200</td><td>100</td><td>200</td><td>100</td><td>200</td></tr>
+			<tr><td>100</td><td>200</td><td>100</td><td>200</td><td>100</td><td>200</td></tr>
+		</table>
+		<hr />	
+
+		<h3>跨行或者跨列的表格单元格</h3>
+		<table border = ""5>
+			<caption>跨行或者跨列的表格单元格</caption>
+			<tr>
+				<td>100</td>
+				<td>200</td>
+				<td>300</td>
+				<td>400</td>
+				<td>500</td>
+				<td>600</td>
+				<td>700</td>
+				<td>800</td>
+				<td>900</td>				
+			</tr>
+			<tr>
+				<td>1000</td>
+				<td colspan = "2">2000</td>
+				<td>4000</td>
+				<td colspan = "3">5000</td>
+				<td>8000</td>
+				<td>9000</td>
+			</tr>
+			<tr>
+				<td rowspan = "2">10000</td>
+				<td>20000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>50000</td>
+				<td>60000</td>
+				<td>70000</td>
+				<td>80000</td>
+				<td>90000</td>
+			</tr>
+			<tr>
+				<td>20000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>50000</td>
+				<td>60000</td>
+				<td>70000</td>
+				<td>80000</td>
+				<td>90000</td>
+			</tr>
+		</table>
+		<table border = "1">
+			<tr>
+				<th>项目</th>
+				<th colspan="2">内容</th>
+			</tr>
+
+			<tr>
+				<th>名字</th>
+				<td>张三</td>
+				<td>李四</td>
+			</tr>
+
+			<tr>
+				<th rowspan = "2">电话</th>
+				<td>1234</td>
+				<td>5678</td>
+			</tr>
+
+			<tr>
+				<td>4321</td>
+				<td>8765</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h3>表格内的标签</h3>
+		<table border="6">
+			<caption style = "text-align:left">带有标签的表格：</caption>
+			<tr>
+				<td>
+					<p style="text-color:green">这是一个段落。</p>
+					<p style="text-color:blue">这是另一个段落。</p>
+				</td>
+				<td>
+					<p>包含一个表格</p>
+					<table border = "7">
+					<tr>
+							<td>A</td>
+							<td>B</td>
+						</tr>
+						<tr>
+							<td>A</td>
+							<td>B</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					包含一个列表：
+					<ul>
+						<li>Apple</li>
+						<li>Banana</li>
+					</ul>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+		<hr />
+
+		<h3>单元格边距</h3>
+		<table border="1" cellpadding="10">
+			<caption>带有单元格边距的表格：</caption>
+			<tr>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<table border="1">
+			<caption>不带有单元格边距的表格：</caption>
+			<tr>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<hr />
+
+		<h3>单元格间距</h3>
+		<table border="1" cellspacing="10">
+			<caption>带有单元格间距的表格：</caption>
+			<tr>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<table border="1">
+			<caption>不带有单元格间距的表格：</caption>
+			<tr>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<hr />	
+
+		<h3>表格背景</h3>
+		<table border="1" style="background-color:red">
+			<caption>红色背景：</caption>
+			<tr>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<table border="1" background="imge/eg_cute.gif">
+			<caption>图片背景：</caption>
+			<tr>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<hr/>
+
+		<h3>单元格背景</h3>
+		<table border="1">
+			<caption>单元格背景：</caption>
+			<tr>
+				<td style = "background-color:red">10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+				<td>10000</td>
+				<td>20000</td>
+			</tr>
+			<tr>
+				<td background="imge/eg_cute.gif">30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+				<td>30000</td>
+				<td>40000</td>
+			</tr>
+		</table>
+		<hr/>
+
+		<h3>在表格中排列内容</h3>
+		<table width="400" border="1">
+			<caption style="text-align:left">在表格中排列内容:</caption>
+ 			<tr>
+  				<th style="text-align:left">消费项目....</th>
+  				<th style="text-align:right">一月</th>
+  				<th style="text-align:right">二月</th>
+ 			</tr>
+ 			<tr>
+ 				<td style="text-align:left">衣服</td>
+  				<td style="text-align:right">$241.10</td>
+  				<td style="text-align:right">$50.20</td>
+ 			</tr>
+ 			<tr>
+  				<td style="text-align:left">化妆品</td>
+  				<td style="text-align:right">$30.00</td>
+  				<td style="text-align:right">$44.45</td>
+ 			</tr>
+ 			<tr>
+  				<td style="text-align:left">食物</td>
+  				<td style="text-align:right">$730.40</td>
+  				<td style="text-align:right">$650.00</td>
+ 			</tr>
+ 			<tr>
+  				<th style="text-align:left">总计</th>
+  				<th style="text-align:right">$1001.50</th>
+  				<th style="text-align:right">$744.65</th>
+ 			</tr>
+		</table>	
+		<hr />
+		
+		<h3>框架（frame）属性</h3>
+		<p><b>注释：</b>frame属性无法在IE中正确显示。</p>
+		<p>
+			<table frame= "box">
+				<caption>Table with frame = "box"</caption>
+  				<tr>
+    					<th>Month</th>
+    					<th>Savings</th>
+					<th>Salings</th>
+					<th>Total</th>
+  				</tr>
+  				<tr>
+    					<td>January</td>
+   	 				<td>$100</td>
+					<td>$200</td>
+					<td>$300</td>
+  				</tr>
+			</table>
+		</p>
+		<p>
+			<table frame= "above">
+				<caption>Table with frame = "above"</caption>
+  				<tr>
+    					<th>Month</th>
+    					<th>Savings</th>
+					<th>Salings</th>
+					<th>Total</th>
+  				</tr>
+  				<tr>
+    					<td>January</td>
+   	 				<td>$100</td>
+					<td>$200</td>
+					<td>$300</td>
+  				</tr>
+			</table>
+		</p>
+		<p>
+			<table frame= "below">
+				<caption>Table with frame = "below"</caption>
+  				<tr>
+    					<th>Month</th>
+    					<th>Savings</th>
+					<th>Salings</th>
+					<th>Total</th>
+  				</tr>
+  				<tr>
+    					<td>January</td>
+   	 				<td>$100</td>
+					<td>$200</td>
+					<td>$300</td>
+  				</tr>
+			</table>
+		</p>
+		<p>
+			<table frame= "hsides">
+				<caption>Table with frame = "hsides"</caption>
+  				<tr>
+    					<th>Month</th>
+    					<th>Savings</th>
+					<th>Salings</th>
+					<th>Total</th>
+  				</tr>
+  				<tr>
+    					<td>January</td>
+   	 				<td>$100</td>
+					<td>$200</td>
+					<td>$300</td>
+  				</tr>
+			</table>
+		</p>
+		<p>
+			<table frame= "vsides">
+				<caption>Table with frame = "vsides"</caption>
+  				<tr>
+    					<th>Month</th>
+    					<th>Savings</th>
+					<th>Salings</th>
+					<th>Total</th>
+  				</tr>
+  				<tr>
+    					<td>January</td>
+   	 				<td>$100</td>
+					<td>$200</td>
+					<td>$300</td>
+  				</tr>
+			</table>
+		</p>
+	</body>
+</html>
